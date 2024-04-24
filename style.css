@@ -30,7 +30,6 @@ body {
     align-items: center;
     color: white;
     padding: 40px;
-
 }
 
 .titulek {
@@ -47,7 +46,6 @@ body {
 
 .autor {
     opacity: 0.8;
-
 }
 
 /* MENU */
@@ -62,7 +60,6 @@ list-style-type: none;
  text-align: center;
  align-items: center;
  font-family: 'Raleway', serif;
- 
 }
 
 .menu li {
@@ -73,7 +70,6 @@ list-style-type: none;
 
 .menu a {
     text-decoration: none;
-    color: rgb(181, 178, 178);
 }
 
 a {
@@ -97,7 +93,7 @@ a {
 }
 
 .proc {
-    padding: 30px;
+    padding: 20px;
 }
 
 .lomitko-sekce {
@@ -108,11 +104,11 @@ a {
 }
 
 .co-musite-videt {
-    padding: 30px;
+    padding: 20px;
 }
 
 .dalsi-sekce {
-    padding: 30px;
+    padding: 20px;
 }
 
 /* FOTOGALERIE */
@@ -142,7 +138,7 @@ a {
     color: grey;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
 
 .menu2{
@@ -219,19 +215,18 @@ a {
        width: 80%;
     }
 
-
-.menu2 {
+    .menu2 {
     display: inline;
-}
+    }
 
     .menu {
-        display: inline;
         flex-direction: column;
         border: 0;
         float: left;
         width: 250px;
-        padding: 30px;
-        align-items: flex-start;
+        padding: 30px 20px 20px 80px;
+        align-items: flex-end;
+        text-align: left;
     }
 
     .menu li {
@@ -247,18 +242,21 @@ a {
     .uvod {
         padding: 30px 30px 30px 280px;
     }
-    
 
     .autor {
         padding: 30px;
     }
 
     .co-musite-videt {
-        padding: 0 0 0 280px;
+        padding: 0 30px 0 280px;
     }
 
     .dalsi-sekce {
-        padding: 0 0 0 280px;
+        padding: 0 30px 0 280px;
+    }
+
+    .proc {
+        padding: 30px;
     }
 
     .galerie .foto {
