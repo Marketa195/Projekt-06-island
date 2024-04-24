@@ -20,24 +20,256 @@ body {
 
 /* HLAVICKA */
 
-.titulek {
-    font-family: 'Raleway', serif;
+.hlavicka {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/island-hlavicka.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 40px;
+
 }
 
+.titulek {
+    font-family: 'Raleway', serif;
+    font-size: 65px;
+}
+
+.lomitko {
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.autor {
+    opacity: 0.8;
+
+}
 
 /* MENU */
 
+.menu {
+display: flex;
+flex-direction: column;
+list-style-type: none;
+ text-transform: uppercase;
+ text-decoration: none;
+ width: 90%;
+ text-align: center;
+ align-items: center;
+ font-family: 'Raleway', serif;
+ 
+}
 
+.menu li {
+    border-bottom: 1px solid rgb(221, 220, 220);
+    padding: 10px;
+    width: 100%;
+}
 
+.menu a {
+    text-decoration: none;
+    color: rgb(181, 178, 178);
+}
+
+a {
+    color: rgb(181, 178, 178);
+}
 
 /* OBSAH */
 
+.photo {
+    display: flex;
+    flex-direction: column;
+}
 
+.uvod {
+ padding: 20px;
+}
 
+.popisek {
+    text-align: center;
+    color: rgb(181, 178, 178);
+}
+
+.proc {
+    padding: 30px;
+}
+
+.lomitko-sekce {
+    width: 80px;
+    height: 2px;
+    background-color: rgb(58, 146, 218);
+    margin-left: -30px;
+}
+
+.co-musite-videt {
+    padding: 30px;
+}
+
+.dalsi-sekce {
+    padding: 30px;
+}
 
 /* FOTOGALERIE */
 
+.fotogalerie {
+    padding: 30px;
+}
 
+.galerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.galerie img {
+    width: 100%;
+}
 
 /* PATICKA */
+
+.paticka {
+    padding: 30px;
+    background: linear-gradient(to bottom, rgb(206, 204, 204), rgb(232, 229, 229) 5%)
+}
+
+.paticka p {
+    color: grey;
+}
+
+@media (min-width: 600px) {
+
+
+.menu2{
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    flex-direction: row;
+    border-top: 1px solid rgb(221, 220, 220);
+    border-bottom: 1px solid rgb(221, 220, 220);
+    padding: 0;
+}
+
+.menu li {
+    border: 0;
+    flex-basis: 25%;
+    border-right: 1px solid rgb(221, 220, 220);
+    width: calc(100%/4);
+}
+
+.menu li:nth-child(4) {
+    border: 0;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.photo p {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.galerie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.galerie .foto {
+  flex-basis: 50%;
+}
+
+.galerie img {
+    display: block;
+}
+
+.galerie p  {
+    display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        background-color: rgb(239, 238, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vysun {
+        width: 960px;
+        background-color: white;
+        margin-top: -50px;
+    }
+
+    .img{
+       width: 80%;
+    }
+
+
+.menu2 {
+    display: inline;
+}
+
+    .menu {
+        display: inline;
+        flex-direction: column;
+        border: 0;
+        float: left;
+        width: 250px;
+        padding: 30px;
+        align-items: flex-start;
+    }
+
+    .menu li {
+        border-bottom: 1px solid rgb(221, 220, 220);
+        border-right: 0;
+        width: 200px;
+    }
+
+    .menu li:nth-child(4) {
+        border-bottom: 1px solid rgb(221, 220, 220);
+    }
+
+    .uvod {
+        padding: 30px 30px 30px 280px;
+    }
+    
+
+    .autor {
+        padding: 30px;
+    }
+
+    .co-musite-videt {
+        padding: 0 0 0 280px;
+    }
+
+    .dalsi-sekce {
+        padding: 0 0 0 280px;
+    }
+
+    .galerie .foto {
+        flex-basis: calc(100%/3);
+      }
+
+    .paticka {
+        width: 960px;
+        padding: 20px 0 0 0;
+        background-color: rgb(239, 238, 238);
+        background-image: none;
+    }
+
+}
